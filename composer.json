@@ -1,0 +1,17 @@
+{
+	"name": "williammoreschi/buscador-cursos",
+	"description": "Projeto que busca os cursos da Alura",
+	"type": "library",
+	"autoload": {
+			"psr-4": {
+					"Williammoreschi\\BuscadorCursos\\": "src/"
+			}
+	},
+	"authors": [
+			{
+					"name": "William Moreschi",
+					"email": "williammoreschi@gmail.com"
+			}
+	],
+	"require": {}
+}
