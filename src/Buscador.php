@@ -1,5 +1,6 @@
 <?php
-namespace WGPM\BuscadorDeCursos;
+namespace WilliamMoreschi\BuscadorDeCursos;
+
 use GuzzleHttp\ClientInterface;
 use Symfony\Component\DomCrawler\Crawler;
 
