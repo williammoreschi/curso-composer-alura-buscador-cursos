@@ -23,5 +23,21 @@
 		"phpunit/phpunit": "^9.5",
 		"squizlabs/php_codesniffer": "^3.6",
 		"phan/phan": "^5.3"
+	},
+	"scripts": {
+		"test" : "phpunit tests/TestBuscadorDeCursos.php",
+		"phan" : "phan --allow-polyfill-parser",
+		"cs" : "phpcs --standard=PSR12 src/",
+		"check" : [
+			"@phan",
+			"@cs",
+			"@test"
+		],
+		"post-update-cmd": [
+			"@check"
+		]
+	},
+	"scripts-descriptions": {
+		"check" : "Roda as verificações do código. PHAN, PHPCS e PHPUNIT"
 	}
 }
